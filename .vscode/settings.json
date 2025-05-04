@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/ab8da8a4-c960-4d3d-a4e2-f5a13442382d/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/uw-social-app",
+    "appService.deploySubpath": "."
+}
