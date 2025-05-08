@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - uw-social
+name: Build and deploy Node.js app to Azure Web App - UW-Social
 
 on:
   push:
@@ -60,15 +60,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B84B20FA2AB84C589B67519E36E7F9E3 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_15C9CE404A244D329F6A016FDEC9FDB1 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D75651ECC5884AD6A6ECB7D0625AF986 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_AB7750F1DF3E4E1F9ECEA2A20EA30200 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8E6CE6141EBF452B97769CECE3F55A6E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2C5FF47F504D452A9D9BBB36A5734E2F }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'uw-social'
+          app-name: 'UW-Social'
           slot-name: 'Production'
           package: .
           
